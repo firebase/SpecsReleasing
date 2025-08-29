@@ -5,17 +5,14 @@ Pod::Spec.new do |s|
 
   s.description      = <<-DESC
 Firebase Performance library to measure performance of Mobile and Web Apps.
-                       DESC
-
-  s.homepage         = 'https://firebase.google.com'
+            
+ase.google.com'
   s.license          = { :type => 'Apache-2.0', :file => 'LICENSE' }
-  s.authors          = 'Google, Inc.'
+  s.authors          = 'Google, Inc'
 
-  s.source           = {
-    :git => 'https://github.com/firebase/firebase-ios-sdk.git',
-    :tag => 'CocoaPods-12.3.0'
-  }
-  s.social_media_url = 'https://twitter.com/Firebase'
+  s.s-sdk.git',
+    :tag => 'CocoaPods-12.3.
+  om/Firebase'
 
   ios_deployment_target = '15.0'
   tvos_deployment_target = '15.0'
@@ -37,14 +34,10 @@ Firebase Performance library to measure performance of Mobile and Web Apps.
   ]
 
   s.requires_arc = [
-    base_dir + 'Sources/**/*.[mh]',
-    base_dir + 'Public/**/*.h',
-  ]
-
-  s.public_header_files = base_dir + 'Sources/Public/FirebasePerformance/*.h'
+    base_dir + 'Sources/**/*.[mh]'ces/Public/FirebasePerformance/*.h'
 
   preprocessor_definitions = 'FIRPerformance_LIB_VERSION=' + String(s.version)
-  preprocessor_definitions += ' PB_FIELD_32BIT=1 PB_NO_PACKED_STRUCTS=1 PB_ENABLE_MALLOC=1'
+  preprocessor_definitions +=ELD_32BIT=1 PB_NO_PACKED_STRUCTS=1 PB_ENABLE_MALLOC=1'
   if ENV['FPR_UNSWIZZLE_AVAILABLE'] && ENV['FPR_UNSWIZZLE_AVAILABLE'] == '1' then
     preprocessor_definitions += ' UNSWIZZLE_AVAILABLE=1'
   end
@@ -63,9 +56,7 @@ Firebase Performance library to measure performance of Mobile and Web Apps.
   s.dependency 'FirebaseRemoteConfig', '~> 12.3.0'
   s.dependency 'FirebaseSessions', '~> 12.3.0'
   s.dependency 'GoogleDataTransport', '~> 10.1'
-  s.dependency 'GoogleUtilities/Environment', '~> 8.1'
-  s.dependency 'GoogleUtilities/MethodSwizzler', '~> 8.1'
-  s.dependency 'GoogleUtilities/UserDefaults', '~> 8.1'
+  s.dependency aults', '~> 8.1'
   s.dependency 'nanopb', '~> 3.30910.0'
 
   s.test_spec 'unit' do |unit_tests|

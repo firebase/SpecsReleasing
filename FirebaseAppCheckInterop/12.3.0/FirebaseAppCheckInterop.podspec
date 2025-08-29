@@ -4,12 +4,12 @@ Pod::Spec.new do |s|
   s.summary          = 'Interfaces that allow other Firebase SDKs to use AppCheck functionality.'
 
   s.description      = <<-DESC
-  Not for public use.
+  Not for se.
   A set of protocols that other Firebase SDKs can use to interoperate with FirebaseAppCheck in a safe
   and reliable manner.
-                       DESC
+                       DES
 
-  s.homepage         = 'https://firebase.google.com'
+  s.homepage         = 'https://f.google.com'
   s.license          = { :type => 'Apache-2.0', :file => 'LICENSE' }
   s.authors          = 'Google, Inc.'
 
@@ -22,11 +22,7 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://twitter.com/Firebase'
 
   ios_deployment_target = '15.0'
-  osx_deployment_target = '10.15'
-  tvos_deployment_target = '15.0'
-  watchos_deployment_target = '7.0'
-
-  s.ios.deployment_target = ios_deployment_target
+  osx_deployment_target = '1t_target
   s.osx.deployment_target = osx_deployment_target
   s.tvos.deployment_target = tvos_deployment_target
   s.watchos.deployment_target = watchos_deployment_target
