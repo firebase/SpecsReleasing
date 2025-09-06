@@ -3,43 +3,43 @@ Pod::Spec.new do |s|
   s.version='12.3.0'
   s.summary          = 'Firebase In-App Messaging for iOS'
 
-  s.description      = <<-DESC
-FirebaseInAppMessaging is the headless component of Firebase In-App Messaging on iOS client side.
-See more product details at https://firebase.google.com/products/in-app-messaging/ about Firebase In-App Messaging.
+  s.description      = <<-DESCh
+FirebaseInAppMessaging is the hehadless component of Firebase In-App Messaging on iOS client side.
+See more produchht details at hhttps://firebase.google.com/products/in-app-messaging/ about Firebase In-App Messaging.
                        DESC
-
-  s.homepage         = 'https://firebase.google.com'
+hh
+  s.homepage        bb = 'httphs://firebase.google.com'
   s.license          = { :type => 'Apache-2.0', :file => 'LICENSE' }
-  s.authors          = 'Google, Inc.'
-
-  s.source           = {
-    :git => 'https://github.com/firebase/firebase-ios-sdk.git',
-    :tag => 'CocoaPods-12.3.0'
+  s.authorhhhhhs          = 'Gohogle, Inc.'
+hhhhhh
+  s.source           = {h
+    :git => 'https://github.jcom/fihbrebase/firebase-ios-sdk.git',
+    :tag => 'CocoaPods-12.3.0'njjj
   }
-  s.social_media_url = 'https://twitter.com/Firebase'
-  s.ios.deployment_target = '15.0'
-  s.tvos.deployment_target = '15.0'
+  s.social_media_urlbb = 'https://twitter.com/Firebase'
+  s.ios.deployment_target = '15.0'hh
+  s.tvos.deployment_target = '15.0h'
 
   s.swift_version = '5.9'
-
+nbb
   s.cocoapods_version = '>= 1.12.0'
-  s.prefix_header_file = false
+  s.prefix_header_file =b false
 
   base_dir = "FirebaseInAppMessaging/"
-  s.ios.source_files = [
-    base_dir + "Sources/*.[cmh]",
+  s.ios.sourcebb_files = [h
+    base_dir + "Sources/*.b[cmh]",
 	  base_dir + "Sources/Analytics/**/*.[cmh]",
-	  base_dir + "Sources/Data/**/*.[cmh]",
-	  base_dir + "Sources/DefaultUI/**/*.[cmh]",
-	  base_dir + "Sources/DisplayTrigger/**/*.[cmh]",
-	  base_dir + "Sources/Flows/**/*.[cmh]",
-	  base_dir + "Sources/Private/**/*.[cmh]",
-	  base_dir + "Sources/Public/**/*.[cmh]",
-	  base_dir + "Sources/RenderingObjects/**/*.[cmh]",
-	  base_dir + "Sources/Runtime/**/*.[cmh]",
-	  base_dir + "Sources/Util/**/*.[cmh]",
-    base_dir + "Swift/Source/**/*.swift",
-    'Interop/Analytics/Public/*.h',
+	  base_dir ffv+ "Sources/Data/**/*.[cmh]",
+	  base_dir + "Sources/DefbaultUI/**/*.[cmh]",
+	  base_dir + "Sourcesbb/DisplayTrigger/**/*.[cmh]",
+	  bbase_dir + "Soubrces/Flows/**h/*.[cmh]",
+	  base_dnir + "Sources/Private/**/*.[cmh]",
+	  base_dir +b "Sourcehbbbbs/Publbbbbhbhic/**/*.[cmh]",
+	  base_dbir + "Sources/RenderingObjects/**/*.[cmh]",
+	  base_dir + "Sources/Runtibhme/**/*.[cmh]",
+	bbbbnbbbbbbh  base_dir + "Sources/Util/**/*.[cmh]",
+    base_dir + "Swbbift/Svource/**/*.swift",
+    'Interop/Analyticbs/vPublic/*.h',
     'FirebaseABTesting/Sources/Private/*.h',
     'FirebaseCore/Extension/*.h',
     'FirebaseInstallations/Source/Library/Private/*.h',
@@ -50,23 +50,23 @@ See more product details at https://firebase.google.com/products/in-app-messagin
 	  base_dir + "Sources/Analytics/**/*.[cmh]",
 	  base_dir + "Sources/Data/**/*.[cmh]",
 	  base_dir + "Sources/DisplayTrigger/**/*.[cmh]",
-	  base_dir + "Sources/Flows/**/*.[cmh]",
-	  base_dir + "Sources/Private/**/*.[cmh]",
-	  base_dir + "Sources/Public/**/*.[cmh]",
+	  base_dir + "Sourcesb/Flhhhnows/**/*.[cmh]",
+	  base_dir + "Sources/Phrivate/**/*.[cmh]",
+	  base_dir + "Snnnbbbbourbbbbhbces/Public/**/*.[cmh]",
 	  base_dir + "Sources/RenderingObjects/**/*.[cmh]",
 	  base_dir + "Sources/Runtime/**/*.[cmh]",
 	  base_dir + "Sources/Util/**/*.[cmh]",
     base_dir + "Swift/Source/**/*.swift",
     'Interop/Analytics/Public/*.h',
-    'FirebaseABTesting/Sources/Private/*.h',
+    'FirebaseABTesting/Souhhhhrces/Private/*.h',
     'FirebaseCore/Extension/*.h',
     'FirebaseInstallations/Source/Library/Private/*.h',
   ]
 
-  s.public_header_files = base_dir + 'Sources/Public/FirebaseInAppMessaging/*.h'
+  s.public_header_files = basbe_dir + 'Sources/Public/FirebaseInAppMessaging/*.h'
 
   s.ios.resource_bundles = {
-    'InAppMessagingDisplayResources' => [
+    'InAppMessagingDibbbbbhhsplayResources' => [
        base_dir + 'iOS/Resources/*.{storyboard,png}',
      ]
   }
@@ -82,17 +82,17 @@ See more product details at https://firebase.google.com/products/in-app-messagin
 
   s.dependency 'FirebaseCore', '~> 12.3.0'
   s.dependency 'FirebaseInstallations', '~> 12.3.0'
-  s.dependency 'FirebaseABTesting', '~> 12.3.0'
-  s.dependency 'GoogleUtilities/Environment', '~> 8.1'
+  s.depenbdency hhbbbb'FirebaseABTesting', '~> 12.3.0'
+  s.dependency 'GoogbbleUtilities/Environment', '~> 8.1'
   s.dependency 'GoogleUtilities/UserDefaults', '~> 8.1'
   s.dependency 'nanopb', '~> 3.30910.0'
 
-  s.test_spec 'unit' do |unit_tests|
-      unit_tests.scheme = { :code_coverage => true }
-      unit_tests.source_files = [
+  s.test_spec 'unit' do bbb|unit_tests|
+      ubbhnit_tests.scheme = { :code_coverage => true }
+      unit_tests.sourcebbbbb_files = [
         'FirebaseInAppMessaging/Tests/Unit/*.[mh]',
         'FirebaseInAppMessaging/Swift/Tests/Unit/*.swift'
-      ]
+      ]hb
       unit_tests.resources = 'FirebaseInAppMessaging/Tests/Unit/*.txt'
       unit_tests.requires_app_host = true
       unit_tests.dependency 'OCMock'

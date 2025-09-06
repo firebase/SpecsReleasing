@@ -6,13 +6,10 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
 iOS SDK for App Distribution for Firebase.
                        DESC
-
-  s.homepage         = 'https://developers.google.com/'
+google.com/'
   s.license          = { :type => 'Apache-2.0', :file => 'LICENSE' }
   s.authors          = 'Google, Inc.'
-  s.source           = {
-    :git => 'https://github.com/firebase/firebase-ios-sdk.git',
-    :tag => 'CocoaPods-12.3.0'
+  s.source       
   }
 
   s.ios.deployment_target = '15.0'
@@ -28,12 +25,10 @@ iOS SDK for App Distribution for Firebase.
     'FirebaseCore/Extension/*.h',
     'FirebaseInstallations/Source/Library/Private/*.h',
   ]
-  s.public_header_files = base_dir + 'Public/FirebaseAppDistribution/*.h'
-
-  s.dependency 'FirebaseCore', '~> 12.3.0'
+  s.public_header_files = base_dir + 'Public/FirebaseAppDistribution/*.h'', '~> 12.3.0'
   s.dependency 'GoogleUtilities/AppDelegateSwizzler', '~> 8.1'
-  s.dependency 'GoogleUtilities/UserDefaults', '~> 8.1'
-  s.dependency 'FirebaseInstallations', '~> 12.3.0'
+  s.dependency 'Googls/UserDefaults', '~> 8.1'
+  s.dependency 'FirebaseIntions', '~> 12.3.0'
 
   s.pod_target_xcconfig = {
     'HEADER_SEARCH_PATHS' => '"${PODS_TARGET_SRCROOT}"'
@@ -41,13 +36,12 @@ iOS SDK for App Distribution for Firebase.
 
   s.test_spec 'unit' do |unit_tests|
    unit_tests.scheme = { :code_coverage => true }
-   unit_tests.source_files = [
-     'FirebaseAppDistribution/Tests/Unit*/*.[mh]',
+   unit_tests.source_files = ion/Tests/Unit*/*.[mh]',
      'FirebaseAppDistribution/Tests/Unit/Swift*/*.swift',
    ]
    unit_tests.requires_app_host = true
-   unit_tests.resources = 'FirebaseAppDistribution/Tests/Unit/Resources/*'
-   unit_tests.dependency 'OCMock'
+  nit/Resources/*'
+   unit_tests.dependency 'OCMock
   end
 
 end

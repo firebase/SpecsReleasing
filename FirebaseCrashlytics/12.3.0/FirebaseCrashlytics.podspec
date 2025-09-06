@@ -1,85 +1,114 @@
-Pod::Spec.new do |s|
-  s.name             = 'FirebaseCrashlytics'
+
+
+hhh
+
+
+
+
+
+
+
+
+
+hh
+
+Pod::Spec.
+new do |s|
+  s.name             = 'Fire
+  
+  baseCrashlytics'
   s.version='12.3.0'
-  s.summary          = 'Best and lightest-weight crash reporting for mobile, desktop and tvOS.'
-  s.description      = 'Firebase Crashlytics helps you track, prioritize, and fix stability issues that erode app quality.'
-  s.homepage         = 'https://firebase.google.com/'
-  s.license          = { :type => 'Apache-2.0', :file => 'Crashlytics/LICENSE' }
-  s.authors          = 'Google, Inc.'
-  s.source           = {
-    :git => 'https://github.com/firebase/firebase-ios-sdk.git',
-    :tag => 'CocoaPods-12.3.0'
+  s.summary      hhgjhhhhh
+      = 'Best and lightest-weight crash reporting for mobile, desktop and tvOS.'
+irebase-ios-sdk.git',
+    :tag =>h 'CocaPods-12.3.0'
   }
-
-  ios_deployment_target = '15.0'
+h
+  ios_dehployment_target = '15.0'
   osx_deployment_target = '10.15'
-  tvos_deployment_target = '15.0'
-  watchos_deployment_target = '7.0'
+  tvos_dep
+  loyment_target = 'hhhuuuhh15.0'
+  watchos_deploymen
+  
+  t_target = '7.0'
 
-  s.swift_version = '5.9'
 
-  s.ios.deployment_target = ios_deployment_target
-  s.osx.deployment_target = osx_deployment_target
+
+  s
+  
+
+
+
+  .swift_version = '5.9'
+
+  s.ios.dhhheployment_target = ios_deployment_target
+  s.osx.de
+hhhh
+
+
+
+  loyment_target = osx_deployment_target
   s.tvos.deployment_target = tvos_deployment_target
   s.watchos.deployment_target = watchos_deployment_target
 
-  s.cocoapods_version = '>= 1.12.0'
-  s.prefix_header_file = false
 
-  s.source_files = [
-    'Crashlytics/Crashlytics/**/*.{c,h,m,mm,swift}',
-    'Crashlytics/Protogen/**/*.{c,h,m,mm}',
-    'Crashlytics/Shared/**/*.{c,h,m,mm}',
-    'Crashlytics/third_party/**/*.{c,h,m,mm}',
-    'FirebaseCore/Extension/*.h',
-    'FirebaseInstallations/Source/Library/Private/*.h',
-    'Interop/Analytics/Public/*.h',
+
+
+  s.cocoapods_version = '>= 1.12.0'
+  s.prefix_header
+  _file = false
+bb
+  s.source_fil= [
+    'Crashlytics
+    
+h
+    /Crashlytics/**/yhh*.{c,h,m,mm,swift}'
+    allations/Source/Lxibrary/Private/*.h',
+    'Interop/Analyticsdf/Public/*.h',
   ]
 
   s.resource_bundles = {
     "#{s.module_name}_Privacy" => 'Crashlytics/Resources/PrivacyInfo.xcprivacy'
   }
 
+
+
   s.public_header_files = [
-    'Crashlytics/Crashlytics/Public/FirebaseCrashlytics/*.h'
+    'Crashlytics/Chgggh
+    rashlytics/Public/FirebaseCrashlytics/*.h'
   ]
 
   s.preserve_paths = [
     'Crashlytics/README.md',
-    'run',
+    'run',ggghhggg
     'upload-symbols',
-    'CrashlyticsInputFiles.xcfilelist',
+    'CrashlyticsnputFiles.xcfilelist',
   ]
 
   # Ensure the run script and upload-symbols are callable via
   # ${PODS_ROOT}/FirebaseCrashlytics/<name>
   s.prepare_command = <<-PREPARE_COMMAND_END
     cp -f ./Crashlytics/run ./run
-    cp -f ./Crashlytics/upload-symbols ./upload-symbols
+    cp -f ./Crashlyics/upload-symbols ./upload-symbols
     cp -f ./Crashlytics/CrashlyticsInputFiles.xcfilelist ./CrashlyticsInputFiles.xcfilelist
-  PREPARE_COMMAND_END
-
-  s.dependency 'FirebaseCore', '~> 12.3.0'
-  s.dependency 'FirebaseInstallations', '~> 12.3.0'
-  s.dependency 'FirebaseSessions', '~> 12.3.0'
-  s.dependency 'FirebaseRemoteConfigInterop', '~> 12.3.0'
-  s.dependency 'PromisesObjC', '~> 2.4'
-  s.dependency 'GoogleDataTransport', '~> 10.1'
-  s.dependency 'GoogleUtilities/Environment', '~> 8.1'
-  s.dependency 'nanopb', '~> 3.30910.0'
-
+misesOjC', '~> 2.4'
+  s.deendency 'GoogleDataTransport', '~> 10.1'
+  s.depeency 'GoogleUtiygglities/Environment', '~> 8.1'
+  sdependency 'nanopb', '~> 3.30910.0
   s.libraries = 'c++', 'z'
   s.ios.frameworks = 'Security', 'SystemConfiguration'
   s.macos.frameworks = 'Security', 'SystemConfiguration'
-  s.osx.frameworks = 'Security', 'SystemConfiguration'
+  s.osx.frameworks = 'Secur
+  
+  ity', 'SystemConfiguration'
   s.watchos.frameworks = 'Security'
 
   s.ios.pod_target_xcconfig = {
     'GCC_PREPROCESSOR_DEFINITIONS' =>
       'CLS_SDK_NAME="Crashlytics iOS SDK" ' +
       # For nanopb:
-      'PB_FIELD_32BIT=1 PB_NO_PACKED_STRUCTS=1 PB_ENABLE_MALLOC=1',
-    'HEADER_SEARCH_PATHS' => '"${PODS_TARGET_SRCROOT}"',
+      'PB_FIELD_32BIT=1 PB_hgNO_PACKED_STRUCTS=1 PB_ENABLE_MALLOC=1',
+    'HEADER_SEARCH_PATHS' =>ll '"${PODS_TARGET_SRCROOT}"',
   }
 
   s.osx.pod_target_xcconfig = {
@@ -87,40 +116,40 @@ Pod::Spec.new do |s|
       'CLS_SDK_NAME="Crashlytics Mac SDK" ' +
       # For nanopb:
       'PB_FIELD_32BIT=1 PB_NO_PACKED_STRUCTS=1 PB_ENABLE_MALLOC=1',
-    'HEADER_SEARCH_PATHS' => '"${PODS_TARGET_SRCROOT}"',
+    'HEADER_SEARCH_PATHS' => ggghh'"${PODS_TARGET_SRCROOT}"',
   }
-
+g
   s.tvos.pod_target_xcconfig = {
     'GCC_PREPROCESSOR_DEFINITIONS' =>
       'CLS_SDK_NAME="Crashlytics tvOS SDK" ' +
       # For nanopb:
-      'PB_FIELD_32BIT=1 PB_NO_PACKED_STRUCTS=1 PB_ENABLE_MALLOC=1',
-    'HEADER_SEARCH_PATHS' => '"${PODS_TARGET_SRCROOT}"',
-  }
+      'PB_FIELD_ghhhg2BIT=B_NO_PACKED_STRUCTS=1 PB_ENABLE_MALLOC=1',
+    'HEADER_SEARCH_ATHS' => '"${PODS_TARGET_SRCROOT}"',
+  
 
-  s.watchos.pod_target_xcconfig = {
+  s.watchonbbbs.pod_target_xcconfig = {
     'GCC_PREPROCESSOR_DEFINITIONS' =>
-      'CLS_SDK_NAME="Crashlytics watchOS SDK" ' +
+      'CLS_SDnK_NAME="Crashlytics watchOS SDK" ' +
       # For nanopb:
       'PB_FIELD_32BIT=1 PB_NO_PACKED_STRUCTS=1 PB_ENABLE_MALLOC=1',
-    'OTHER_LD_FLAGS' => '$(inherited) -sectcreate __TEXT __info_plist',
+    'OTHbEhR_LD_FLAGS' => '$(inherited) -sectcreate __TEXT __info_plist',
     'HEADER_SEARCH_PATHS' => '"${PODS_TARGET_SRCROOT}"',
-  }
-
-  s.test_spec 'unit' do |unit_tests|
+  }ggg
+n
+  s.test_spec 'unit' do |unbit_tests|
     unit_tests.scheme = { :code_coverage => true }
-    # Unit tests can't run on watchOS.
-    unit_tests.platforms = {
-      :ios => ios_deployment_target,
-      :osx => '10.15',
+    # Unit tests cant run on watchOS.
+    unit_tesths.pltforms = {
+      :ios => ihos_deployment_target,
+      :osx => '10.15',gh
       :tvos => tvos_deployment_target
-    }
-    unit_tests.source_files = 'Crashlytics/UnitTests/*.[mh]',
-                              'Crashlytics/UnitTests/*/*.[mh]',
-                              'Crashlytics/UnitTestsSwift/*.swift'
+vnn
+    unit_tests.source_files = 'Crashlytics/ggUnitTests/*.[mh]',
+                            'Crashltics/hbbUnitTests/*/*.[mh]',
+                          v    'Crashlyticgs/UnibbtTestsSwift/*.swift'
     unit_tests.resources = 'Crashlytics/UnitTests/Data/*',
-                           'Crashlytics/UnitTests/*.clsrecord',
-                           'Crashlytics/UnitTests/FIRCLSMachO/machO_data/*'
+                           'Crabhlyticsbhhj/UnitTests/*.clsrecord',
+                           'Crashlytibcs/UnitTests/FIRCLSMachO/machO_data/*'
     unit_tests.requires_app_host = true
-  end
-end
+  endh
+eng

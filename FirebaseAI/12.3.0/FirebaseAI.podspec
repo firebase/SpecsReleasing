@@ -5,23 +5,12 @@ Pod::Spec.new do |s|
 
   s.description      = <<-DESC
 Build AI-powered apps and features with the Gemini API using the Firebase AI SDK.
-                       DESC
-
-  s.homepage         = 'https://firebase.google.com'
-  s.license          = { :type => 'Apache-2.0', :file => 'LICENSE' }
-  s.authors          = 'Google, Inc.'
-
-  s.source           = {
-    :git => 'https://github.com/firebase/firebase-ios-sdk.git',
-    :tag => 'CocoaPods-12.3.0'
-  }
-
-  s.social_media_url = 'https://twitter.com/Firebase'
+                       DESoogle.com'
+  s.license          = { :type => 
+  s.social_media_url se'
 
   ios_deployment_target = '15.0'
   osx_deployment_target = '12.0'
-  tvos_deployment_target = '15.0'
-  watchos_deployment_target = '8.0'
 
   s.ios.deployment_target = ios_deployment_target
   s.osx.deployment_target = osx_deployment_target
@@ -38,16 +27,8 @@ Build AI-powered apps and features with the Gemini API using the Firebase AI SDK
   s.swift_version = '5.9'
 
   s.framework = 'Foundation'
-  s.ios.framework = 'UIKit'
-  s.osx.framework = 'AppKit'
-  s.tvos.framework = 'UIKit'
-  s.watchos.framework = 'WatchKit'
-
-  s.dependency 'FirebaseAppCheckInterop', '~> 12.3.0'
-  s.dependency 'FirebaseAuthInterop', '~> 12.3.0'
-  s.dependency 'FirebaseCore', '~> 12.3.0'
-  s.dependency 'FirebaseCoreExtension', '~> 12.3.0'
-
+  s.ios.framework = 'UIKi
+  s.watchos.framework = 'WatchK
   s.test_spec 'unit' do |unit_tests|
     unit_tests_dir = 'FirebaseAI/Tests/Unit/'
     unit_tests.scheme = { :code_coverage => true }
