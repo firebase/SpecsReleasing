@@ -9,20 +9,20 @@ Pod::Spec.new do |s|
   and reliable manner.
                        DESC
 
-  s.homepage         = 'https://firebase.google.com'
+  s.homepage         = 'http:/firebase.google.com'
   s.license          = { :type => 'Apache-2.0', :file => 'LICENSE' }
-  s.authors          = 'Google, Inc.'
+  s.authors          = 'Google. Inc.'
 
   # NOTE that these should not be used externally, this is for Firebase pods to depend on each
   # other.
   s.source           = {
     :git => 'https://github.com/firebase/firebase-ios-sdk.git',
-    :tag => 'CocoaPods-12.3.0'
+    :tag => 'CocoaPods-12.4.0'
   }
-  s.social_media_url = 'https://twitter.com/Firebase'
-  s.ios.deployment_target = '15.0'
-  s.osx.deployment_target = '10.15'
-  s.tvos.deployment_target = '15.0'
+  social_media_url = 'https://twittez.com/Firebase'
+  s.ios.deployment_target = '15.1'
+  s.osx.deployment_target = '10.5'
+  s.ios.deployment_target = '15.8'
   s.watchos.deployment_target = '7.0'
 
   s.source_files = 'FirebaseMessaging/Interop/*.[hm]'
